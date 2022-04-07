@@ -1,3 +1,46 @@
-body{   
-    
+.divTop{
+    width:99%;
+    height:15%;
+    margin:auto;
+    text-align:center;
+    size: 200px;
+    background-color: lightblue;
+    position:absolute;
+
+}
+.divMid{
+    width:90%;
+    height:60%;
+    margin: auto;
+    position: absolute;
+    background-color: lightsalmon;
+    top: 20%;
+    left:5%
+}
+.divBot{
+    width:99%;
+    height:15%;
+    margin: auto;
+    background-color: lightgray;
+    position: absolute;
+    bottom: 0%;
+}
+.game{
+    width: 50%;
+    height: 100%;
+    background-color: lightgreen;
+    margin: auto;
+    position: absolute;
+    left:20%;
+}
+.spin{
+    width:10%;
+    height:100%; 
+    background-color: bisque;
+    position: absolute;
+    right:20%;
+
+}
+body{
+    background-color: black;
 }
