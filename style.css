@@ -44,3 +44,9 @@
 body{
     background-color: black;
 }
+.wheels{
+    margin: 0 auto;
+    height:80%;
+    width:15%;
+    float: left;
+}
