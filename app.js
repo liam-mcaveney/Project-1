@@ -1,6 +1,4 @@
-const slotsOnWheel = 10;
-const ranNum = randomNum();
-
+const slotsOnWheel = 1;
 
 function randomNum(){
     return Math.floor(Math.random()*(slotsOnWheel));
@@ -16,21 +14,28 @@ function spin(){
     const wheel4 = getElement('wheel4');
     const wheel5 = getElement('wheel5');
 
-    const num1 = ranNum;
-    const num2 = ranNum;
-    const num3 = ranNum;
-    const num4 = ranNum;
-    const num5 = ranNum;
+    const num1 = randomNum();
+    const num2 = randomNum();
+    const num3 = randomNum();
+    const num4 = randomNum();
+    const num5 = randomNum();
 
-    wheel1.innerHTML ='${num1}';
-    wheel2.innerHTML ='${num2}';
-    wheel3.innerHTML ='${num3}';
-    wheel4.innerHTML ='${num4}';
-    wheel5.innerHTML ='${num5}';
+    wheel1.innerHTML = num1;
+    wheel2.innerHTML = num2;
+    wheel3.innerHTML = num3;
+    wheel4.innerHTML = num4;
+    wheel5.innerHTML = num5;
 
     if(num1 == num2 && num1 == num3 && num1 == num4 && num1 == num5){
-        console.log("You Win");
+        const win ="You Win";
+        console.log(win);
+        const bot = getElement('divBot');
+        bot.innerHTML = `${win}`;
     }else{
-        console.log("You Lose");
+        const lose ="You Lose";
+        console.log(lose);
+        const bot = getElement('divBot');
+        bot.innerHTML = `${lose}`;
     }
+    
 }
