@@ -1,4 +1,4 @@
-const slotsOnWheel = 1;
+const slotsOnWheel = 5;
 
 function randomNum(){
     return Math.floor(Math.random()*(slotsOnWheel));

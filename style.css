@@ -47,6 +47,8 @@ body{
 .wheels{
     margin: 0 auto;
     height:80%;
-    width:15%;
+    width:20%;
     float: left;
+    text-align: center;
+    background-color: lightyellow;
 }
