@@ -1,4 +1,5 @@
 const slotsOnWheel = 5;
+const wheelRadius = 250;
 
 function randomNum(){
     return Math.floor(Math.random()*(slotsOnWheel));
@@ -39,3 +40,16 @@ function spin(){
     }
     
 }
+
+/*function wheelSetup(wheels){
+    var numberRan = randomNum();
+    var wheelAngle = 360 / slotsOnWheel;
+    for (var i = 0; i < slotsOnWheel; i++){
+        var wheel = document.createElement('div');
+        wheel.className = 'wheel';
+        var transform = 'rotateX('+ (wheelAngle * i) + 'deg) translateZ(' + wheelRadius + 'px)';
+        wheel.style.transform = transform;
+        var wheelNumbers = $(wheel).append('<p>' + ((numberRan + i)% slotsOnWheel)+ '</p>');
+        wheels.append(wheel);
+    }
+}*/
