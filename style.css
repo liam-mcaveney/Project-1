@@ -5,7 +5,6 @@
     text-align:center;
     font-size: 150px;
     position:absolute;
-    color:white;
 
 }
 .divMid{
@@ -23,7 +22,7 @@
     position: absolute;
     bottom: 0%;
     font-size:50px;
-    color: white;
+
     text-align: center;
 }
 .game{
@@ -44,7 +43,7 @@
 
 }
 body{
-    background-color: black;
+    background-color: lightgray;
 }
 .wheels{
     margin: 0 auto;
