@@ -1,6 +1,6 @@
 const slotsOnWheel = 4;
 const wheelRadius = 250;
-const images = ["images/slotmachine1.jpeg","images/slotmachine2.jpeg","images/slotmachine3.jpeg","images/slotmachine4.jpeg","images/slotmachine5.jpeg"];
+const images = ["images/slotmachine6.webp","images/slotmachine2.webp","images/slotmachine7.webp","images/slotmachine8.webp","images/slotmachine5.jpeg"];
 
 function randomNum(){
     return Math.floor(Math.random()*(slotsOnWheel));
