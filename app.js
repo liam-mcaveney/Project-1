@@ -28,7 +28,7 @@ function spin(){
     const image4 = images[num4];
     const image5 = images[num5];
 
-    console.log(image1);
+   // console.log(image1);
     wheel1.innerHTML = '<img src =' + image1 + '>';
     wheel2.innerHTML = '<img src =' + image2 + '>';
     wheel3.innerHTML = '<img src =' + image3 + '>';
