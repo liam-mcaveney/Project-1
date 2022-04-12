@@ -1,5 +1,6 @@
-const slotsOnWheel = 5;
+const slotsOnWheel = 4;
 const wheelRadius = 250;
+const images = ["images/slotmachine1.jpeg","images/slotmachine2.jpeg","images/slotmachine3.jpeg","images/slotmachine4.jpeg","images/slotmachine5.jpeg"];
 
 function randomNum(){
     return Math.floor(Math.random()*(slotsOnWheel));
@@ -21,11 +22,18 @@ function spin(){
     const num4 = randomNum();
     const num5 = randomNum();
 
-    wheel1.innerHTML = num1;
-    wheel2.innerHTML = num2;
-    wheel3.innerHTML = num3;
-    wheel4.innerHTML = num4;
-    wheel5.innerHTML = num5;
+    const image1 = images[num1];
+    const image2 = images[num2];
+    const image3 = images[num3];
+    const image4 = images[num4];
+    const image5 = images[num5];
+
+    console.log(image1);
+    wheel1.innerHTML = '<img src =' + image1 + '>';
+    wheel2.innerHTML = '<img src =' + image2 + '>';
+    wheel3.innerHTML = '<img src =' + image3 + '>';
+    wheel4.innerHTML = '<img src =' + image4 + '>';
+    wheel5.innerHTML = '<img src =' + image5 + '>';
 
     if(num1 == num2 && num1 == num3 && num1 == num4 && num1 == num5){
         const win ="You Win";

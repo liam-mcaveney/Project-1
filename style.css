@@ -50,5 +50,13 @@ body{
     width:20%;
     float: left;
     text-align: center;
-    background-color: lightyellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+.wheels img {
+    flex-shrink: 0;
+    min-width: 20%;
+    min-height: 20%
 }
